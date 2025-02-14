@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reg, .question1, .question2, .question3, .question4 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    color: grey;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="fname"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    display: inline-block;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.question1, .question2, .question3, .question4 {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .reg, .question1, .question2, .question3, .question4 {
+        padding: 10px;
+    }
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+    border-color: #4CAF50;
+    transition: border-color 0.3s ease;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h4, h3 {
+    text-align: center;
+}
+
+input[type="radio"], label {
+    margin-top: 5px;
+}
+
+.reg, .question1, .question2, .question3, .question4 {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
