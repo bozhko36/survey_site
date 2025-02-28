@@ -208,29 +208,39 @@ footer {
     border: 2px solid #333;
 }
 
-.slideshow-container {
-    max-width: 80%;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #f4f7fa; color: #333; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+
+.slideshow-container { 
+    position: relative; 
+    width: 100%; 
+    max-width: 800px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.slides {
-    display: none;
+.slide { 
+    display: none; 
+    width: 100%; 
+    border-radius: 8px;
 }
 
-.slides img {
-    width: 100%;
-    height: auto;
+.active { 
+    display: block; 
 }
 
-.fade {
-    animation: fade 5s infinite;
+video { 
+    width: 100%; 
+    border-radius: 8px;
 }
 
-@keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
+@media (max-width: 768px) {
+    .slideshow-container {
+        padding: 10px;
+    }
 }
