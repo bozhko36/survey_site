@@ -1,14 +1,13 @@
-let slideIndex = 0;
+let slides = document.querySelectorAll(".slide");
+let index = 0;
 
-function showSlides() {
-    let slides = document.getElementsByClassName("slides");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+function showNextSlide() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+    if (slides[index].tagName === "VIDEO") {
+        slides[index].play();
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex - 1].style.display = "block";  
-    
-    setTimeout(showSlides, 5000);
 }
-showSlides();
+
+setInterval(showNextSlide, 3000);
